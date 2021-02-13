@@ -58,7 +58,14 @@ $autoload['packages'] = array();
 |
 |	$autoload['libraries'] = array('user_agent' => 'ua');
 */
-$autoload['libraries'] = array();
+$autoload['libraries'] = array(
+    'database',
+    'session',
+    'upload',
+    'form_validation',
+    'pdf',
+    'encryption'
+);
 
 /*
 | -------------------------------------------------------------------
@@ -89,7 +96,11 @@ $autoload['drivers'] = array();
 |
 |	$autoload['helper'] = array('url', 'file');
 */
-$autoload['helper'] = array();
+$autoload['helper'] = array(
+    'url',
+    'form',
+    'bangambo'
+);
 
 /*
 | -------------------------------------------------------------------
@@ -132,4 +143,13 @@ $autoload['language'] = array();
 |
 |	$autoload['model'] = array('first_model' => 'first');
 */
-$autoload['model'] = array();
+$autoload['model'] = array(
+    'M_formasi_lab',
+    'M_jenis_soal',
+    'M_informasi',
+    'M_pertanyaan',
+    'M_panitia',
+    'M_peserta',
+    'M_jawaban',
+    'M_nilai'
+);
